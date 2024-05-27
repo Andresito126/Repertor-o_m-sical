@@ -96,16 +96,14 @@ searchMaxNode.addEventListener("click", ()=>{
 
     //mostar todas las canciones
 
-    
-document.getElementById("btn-show").addEventListener("click", () => {
-    const showResults = document.getElementById("showResults");
+let showAllButton = document.getElementById('btn-show');
+ const showResult = document.getElementById('showResults');
 
-
+showAllButton.addEventListener('click', () => {
     bst.inOrder(song => {
-        showResults.innerHTML += `
-            <p>Nombre: ${song.title}</p> 
+        showResult.innerHTML += `
+            <p>Nombre: ${song.title}</p>
         `;
     });
 });
-
 

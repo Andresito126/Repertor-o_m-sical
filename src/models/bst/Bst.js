@@ -101,11 +101,11 @@ class BST {
         this.inOrderHelper(this.#root, callback);
     }
 
-    inOrderHelper(currentNode, callback) {
-        if (currentNode !== null) {
-            this.inOrderHelper(currentNode.left, callback);
-            callback(currentNode.value);
-            this.inOrderHelper(currentNode.right, callback);
+    inOrderHelper(node, callback) {
+        if (node !== null) {
+            this.inOrderHelper(node.left, callback);
+            callback(node.value);
+            this.inOrderHelper(node.right, callback);
         }
     }
 
