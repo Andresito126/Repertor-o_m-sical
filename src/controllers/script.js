@@ -12,7 +12,8 @@ añadir.addEventListener("click", ()=>{
     if (title && author && gender && albumName) {
         let cancion = new Cancion(title, author, gender, albumName);
         bst.add(cancion);
-        console.log(cancion);
+        alert("Se  ha agregado correctamente la canción.");
+        
     } else {
         alert("Por favor, complete todos los campos.");
     }

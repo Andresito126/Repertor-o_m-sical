@@ -1,19 +1,25 @@
 *{
     margin: 0;
     padding: 0;
-
+    
 }
 
 body{
-  margin: 0.5cm;
+  margin: 0;
+  padding: 0; 
+  background-color: #a9b6c5;
 }
 
                                 /* INGRESAR UNA CANCIÓN, BUSCAR CANCION, MIN, MAX*/
 
   .canciones, .search, .min, .max, .search, .show{
-
+    margin: 1cm;
     height: 5cm;
-    width: 100%;
+    width: auto;
+    backdrop-filter: blur(10px); 
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 9px black; 
   }
 
 
@@ -32,6 +38,7 @@ body{
     margin: 5px;
     margin-top: 20px;
     margin-bottom: 1cm;
+    
   }
   
   /* input hover */
@@ -92,16 +99,20 @@ body{
 
                              /* RESULTADOS*/
 .resultados{
-background-color: #e8dfdf4e;
-color: black;
-width: 400px;
-height: 120px;
-text-align: justify;
-display: inline;
-position:absolute;
-left: 55%;
-font-family: inherit; 
-font-size: 17px;
+  background-color: rgba(232, 223, 223, 0.3); /* Ajuste de color para semitransparente */
+    color: black;
+    width: 400px;
+    height: 120px;
+    text-align: justify;
+    display: inline;
+    position: absolute;
+    left: 55%;
+    font-family: inherit; 
+    font-size: 17px;
+    backdrop-filter: blur(10px); 
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 10px 50px black; 
 
 }
 
@@ -140,9 +151,9 @@ h2 {
 
 /*                      footer*/
 
-footer{
-  margin: 0;
-  padding: 0;
+.footer{
+  margin: 0px;
+  padding: 0px;
   background: #080C32;
   
   height: 3.5cm;
