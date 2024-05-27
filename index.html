@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertorio Musical</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>REPERTORÍO MÚSICAL</h1>
+    </nav>
+
+    <header>
+        <h2>Bienvenido tu repertorío </h2>
+    </header>
+
+
+    <section class="canciones" >
+        <h2>Agregar canciones</h2>
+        <input class="canciones__item" id="title" type="text" placeholder="Nombre de la canción">
+        <input class="canciones__item" id="author" type="text" placeholder="Autor">
+        <input class="canciones__item" id="gender" type="text" placeholder="Genero">
+        <input class="canciones__item" id="albumName" type="text" placeholder="Nombre del album">
+        <button class="canciones__item item--button" id="btn-add">Agregar la cancion</button>
+        
+    </section>
+
+    <section class="search">
+        <h2>Buscar canción</h2>
+        <input class="search__item" id="searchSong" type="text" placeholder="Canción">
+        <button class="search__item item--button" id="btn-search" >Buscar canción</button>
+        <div class="resultados" id="searchResult"></div>
+    </section>
+
+    <section class="min">
+        <h2>Buscar valor máximo</h2>
+        <button class="min__button" id="btn-min" >Buscar canción más corta</button>
+        <div class="resultados" id="searchMin"></div>
+    </section>
+
+    <section class="max" >
+       <h2>Buscar valor mínimo</h2>
+        <button class="max__button" id="btn-max" >Buscar canción más larga</button>
+        <div class="resultados" id="searchMax"></div>
+    </section>
+
+    <section class="show">
+        <h2>Mostrar todas las canciones</h2>
+        <button class="show__button" id="btn-show">Mostrar todas las canciones</button>
+        <div class="resultados" id="showResults"></div>
+    </section>
+
+    <script type="module" src="./src/controllers/script.js" ></script>
+
+    <footer class="footer">
+        <div class="footer__content">
+
+                    <p class="font__footer">Andre Julian Gutierrez Alcazar© <br>233881 <br>3A</p>
+
+        </div>
+        <div class="line"></div>
+    </footer>
+
+
+</body>
+
+</html>
